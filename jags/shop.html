@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Fashion - Shop</title>
+    <meta name="description" content="Jag's Fashion - Загварлаг, стильтэй нарны шил, нүдний шил.">
+    <meta name="keywords" content="нарны шил, нүдний шил, загвар, стильтэй, загварлаг">
+    <meta name="author" content="Jag's Fashion">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90c079449c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="user-info">
+            <img src="images/logo.PNG" alt="User Image" class="user-image" id="logo-image">
+            <span class="user-name" id="user-name">User</span>
+            <button class="night-mode-btn">🌙</button>
+        </div>
+        <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+                <li><a href="#" id="change-image">Change Image</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="products">
+        <h2>Манай Бүтээгдэхүүнүүд</h2>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Хайлт хийх...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div id="sale-products" class="product-category">
+            <h3>Sale 
+                <i class="fas fa-arrow-left left-arrow" data-category="sale" aria-hidden="true" style="display: none;"></i>
+                <i class="fas fa-arrow-right right-arrow" data-category="sale" aria-hidden="true"></i>
+            </h3>
+            <div class="filters" style="display: none;">
+                <label for="sale-price-filter">Үнэ:</label>
+                <select id="sale-price-filter">
+                    <option value="default">Сонгох</option>
+                    <option value="low-to-high">Хямд</option>
+                    <option value="high-to-low">Үнэтэй</option>
+                </select>
+                <label for="sale-material-filter">Материал:</label>
+                <select id="sale-material-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="titan">Титан</option>
+                    <option value="iron">Төмөр</option>
+                </select>
+                <label for="sale-style-filter">Загвар:</label>
+                <select id="sale-style-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="frameless">Холбоос</option>
+                    <option value="full-rim">Бүтэн хүрээтэй</option>
+                    <option value="semi-rimless">Хагас хүрээтэй</option>
+                    <option value="combination">Хөмсөгтэй</option>
+                    <option value="half-eye">Дээгүүрээ хүрээгүй</option>
+                    <option value="low-bridge">Нарийн</option>
+                    <option value="wire">Дээгүүрээ холбоостой</option>
+                </select>
+            </div>
+            <div class="product-grid"></div>
+        </div>
+        <div id="sunglasses-products" class="product-category">
+            <h3>Sunglasses 
+                <i class="fas fa-arrow-left left-arrow" data-category="sunglasses" aria-hidden="true" style="display: none;"></i>
+                <i class="fas fa-arrow-right right-arrow" data-category="sunglasses" aria-hidden="true"></i>
+            </h3>
+            <div class="filters" style="display: none;">
+                <label for="sunglasses-price-filter">Үнэ:</label>
+                <select id="sunglasses-price-filter">
+                    <option value="default">Сонгох</option>
+                    <option value="low-to-high">Хямд</option>
+                    <option value="high-to-low">Үнэтэй</option>
+                </select>
+                <label for="sunglasses-material-filter">Материал:</label>
+                <select id="sunglasses-material-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="titan">Титан</option>
+                    <option value="iron">Төмөр</option>
+                </select>
+                <label for="sunglasses-style-filter">Загвар:</label>
+                <select id="sunglasses-style-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="frameless">Холбоос</option>
+                    <option value="full-rim">Бүтэн хүрээтэй</option>
+                    <option value="semi-rimless">Хагас хүрээтэй</option>
+                    <option value="combination">Хөмсөгтэй</option>
+                    <option value="half-eye">Дээгүүрээ хүрээгүй</option>
+                    <option value="low-bridge">Нарийн</option>
+                    <option value="wire">Дээгүүрээ холбоостой</option>
+                </select>
+            </div>
+            <div class="product-grid"></div>
+        </div>
+        <div id="eyeframes-products" class="product-category">
+            <h3>Eyeframes 
+                <i class="fas fa-arrow-left left-arrow" data-category="eyeframes" aria-hidden="true" style="display: none;"></i>
+                <i class="fas fa-arrow-right right-arrow" data-category="eyeframes" aria-hidden="true"></i>
+            </h3>
+            <div class="filters" style="display: none;">
+                <label for="eyeframes-price-filter">Үнэ:</label>
+                <select id="eyeframes-price-filter">
+                    <option value="default">Сонгох</option>
+                    <option value="low-to-high">Хямд</option>
+                    <option value="high-to-low">Үнэтэй</option>
+                </select>
+                <label for="eyeframes-material-filter">Материал:</label>
+                <select id="eyeframes-material-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="titan">Титан</option>
+                    <option value="iron">Төмөр</option>
+                </select>
+                <label for="eyeframes-style-filter">Загвар:</label>
+                <select id="eyeframes-style-filter">
+                    <option value="all">Бүгд</option>
+                    <option value="frameless">Холбоос</option>
+                    <option value="full-rim">Бүтэн хүрээтэй</option>
+                    <option value="semi-rimless">Хагас хүрээтэй</option>
+                    <option value="combination">Хөмсөгтэй</option>
+                    <option value="half-eye">Дээгүүрээ хүрээгүй</option>
+                    <option value="low-bridge">Нарийн</option>
+                    <option value="wire">Дээгүүрээ холбоостой</option>
+                </select>
+            </div>
+            <div class="product-grid"></div>
+        </div>
+        
+    </section>
+    
+    <section id="gift-cards">
+        <div class="section-header">
+            <h2 class="section-title">Бэлгийн картууд</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 50000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-50000">_____</span></p>
+                </div>
+                <h3>50,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-50000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('50000', 50000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 100000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-100000">_____</span></p>
+                </div>
+                <h3>100,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-100000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('100000', 100000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 200000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-200000">_____</span></p>
+                </div>
+                <h3>200,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-200000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('200000', 200000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 300000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-300000">_____</span></p>
+                </div>
+                <h3>300,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-300000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('300000', 300000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 500000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-500000">_____</span></p>
+                </div>
+                <h3>500,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-500000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('500000', 500000)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <div class="product-image-container">
+                    <img src="images/1.jpg" alt="Gift Card 1000000">
+                    <p class="dear-text">Dear: <span id="name-placeholder-1000000">_____</span></p>
+                </div>
+                <h3>1,000,000 төгрөгийн карт</h3>
+                <div class="input-container">
+                    <input type="text" id="name-input-1000000" placeholder="Enter Name">
+                </div>
+                <button onclick="addToCart('1000000', 1000000)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Jag's Fashion</p>
+        <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+        </ul>
+    </footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="cart.html"><i class="fa-regular fa-bookmark"></i></a></li>
+            <li><a href="shop.html" class="active"><i class="fas fa-shop"></i></a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="heart.html"><i class="fas fa-heart"></i></a></li>
+            <li><a href="user.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <script src="Data.js" defer></script>
+    <script src="shopScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="giftCart.js" defer></script>
+    <script src="searchScript.js" defer></script>
+</body>
+
+</html>
