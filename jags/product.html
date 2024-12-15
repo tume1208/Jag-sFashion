@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Fashion - Product</title>
+    <meta name="description" content="Jag's Fashion - Загварлаг, стильтэй нарны шил, нүдний шил.">
+    <meta name="keywords" content="нарны шил, нүдний шил, загвар, стильтэй, загварлаг">
+    <meta name="author" content="Jag's Fashion">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90c079449c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="user-info">
+            <img src="images/logo.PNG" alt="User Image" class="user-image" id="logo-image">
+            <span class="user-name" id="user-name">User</span>
+            <button class="night-mode-btn">🌙</button>
+        </div>
+        <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+                <li><a href="#" id="change-image">Change Image</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Хайлт хийх...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <section id="product-details">
+        <div class="product-main-image">
+            <img id="main-image" src="" alt="Product Image">
+            <i class="fas fa-heart heart-icon"></i>
+        </div>
+        <div class="product-thumbnails">
+            <img class="thumbnail" id="thumb1" src="" alt="Thumbnail 1">
+            <img class="thumbnail" id="thumb2" src="" alt="Thumbnail 2">
+            <img class="thumbnail" id="thumb3" src="" alt="Thumbnail 3">
+        </div>
+        <div class="product-info">
+            <h3 id="product-name"></h3>
+            <p id="product-price"></p>
+            <p id="product-description"></p>
+            <p id="product-size"></p>
+            <button id="add-to-cart-button">Сагсанд нэмэх</button> <!-- Add to Cart button -->
+        </div>
+    </section>
+    <section id="prescription">
+        <h3>Нүдний шилний жор</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>SPH</th>
+                    <th>CYL</th>
+                    <th>AXIS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>O.D (баруун)</td>
+                    <td><select id="od-sph" name="od-sph"></select></td>
+                    <td><select id="od-cyl" name="od-cyl"></select></td>
+                    <td><input type="number" id="od-axis" name="od-axis" min="0" max="180"></td>
+                </tr>
+                <tr>
+                    <td>O.S (зүүн)</td>
+                    <td><select id="os-sph" name="os-sph"></select></td>
+                    <td><select id="os-cyl" name="os-cyl"></select></td>
+                    <td><input type="number" id="os-axis" name="os-axis" min="0" max="180"></td>
+                </tr>
+                <tr>
+                    <td>PD (ПД)</td>
+                    <td colspan="3"><input type="text" id="pd" name="pd"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="prescription-field">
+            <label for="additional-info">Нэмэлт мэдээлэл:</label>
+            <textarea id="additional-info" name="additional-info" rows="4" cols="35"></textarea>
+        </div>
+        <button type="submit" id="submit-prescription">Илгээх</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jag's Fashion</p>
+        <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+        </ul>
+    </footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="cart.html"><i class="fa-regular fa-bookmark"></i></a></li>
+            <li><a href="shop.html"><i class="fas fa-shop"></i></a></li>
+            <li><a href="index.html" class="active"><i class="fas fa-home"></i></a></li>
+            <li><a href="heart.html"><i class="fas fa-heart"></i></a></li>
+            <li><a href="user.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <script src="Data.js" defer></script>
+    <script src="productScript.js" defer></script>
+    <script src="prescriptionScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="changeImage.js" defer></script>
+</body>
+
+</html>

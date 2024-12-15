@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jag's Fashion - Cart</title>
+    <meta name="description" content="Jag's Fashion - Загварлаг, стильтэй нарны шил, нүдний шил.">
+    <meta name="keywords" content="нарны шил, нүдний шил, загвар, стильтэй, загварлаг">
+    <meta name="author" content="Jag's Fashion">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90c079449c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="user-info">
+            <img src="images/logo.PNG" alt="User Image" class="user-image" id="logo-image">
+            <span class="user-name" id="user-name">User</span>
+            <button class="night-mode-btn">🌙</button>
+        </div>
+        <div id="sidebar-menu" class="sidebar-menu">
+            <ul>
+                <li><a href="#" id="change-image">Change Image</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Хайлт хийх...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+    <section id="cart">
+        <h2>Таны сагс</h2>
+        <div class="cart-items">
+            <!-- Сагсанд байгаа бүтээгдэхүүнүүд энд гарна -->
+        </div>
+        <div class="gift-card-items">
+            <!-- Gift cards will be displayed here -->
+        </div>
+        <div class="cart-summary">
+            <h3>Нийт дүн:</h3>
+            <p id="total-price">0₮</p>
+            <button id="checkout-button">Төлбөр хийх</button>
+            <div id="qr-reader" style="width: 300px;"></div>
+            <div id="qr-reader-results"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jag's Fashion</p>
+        <ul>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+            <li><a href="#twitter">Twitter</a></li>
+        </ul>
+    </footer>
+    <nav class="bottom-nav">
+        <ul>
+            <li><a href="cart.html" class="active"><i class="fa-regular fa-bookmark"></i></a></li>
+            <li><a href="shop.html"><i class="fas fa-shop"></i></a></li>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="heart.html"><i class="fas fa-heart"></i></a></li>
+            <li><a href="user.html"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+    <script src="Data.js" defer></script>
+    <script src="cartScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="giftCart.js" defer></script>
+    <script src="changeImage.js" defer></script>
+</body>
+
+</html>
